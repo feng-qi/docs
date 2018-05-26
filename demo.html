@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<meta name="author" content="(fengqi)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2 class="author">fengqi</h2><h2 class="date">2018-05-26 Sat 00:00</h2><p class="date">Created: 2018-05-26 Sat 22:06</p>
+</section>
+<section id="table-of-contents">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-orgbf8f618">Introduction</a></li>
+<li><a href="#/slide-org9cdd04d">Requirements</a></li>
+<li><a href="#/slide-orga8ac785">Source Code Support</a></li>
+<li><a href="#/slide-org41acd44">More Details</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<section id="slide-orgbf8f618">
+<h2 id="orgbf8f618">Introduction</h2>
+<p>
+This document is written in org mode, and is exported using org-reveal.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org9cdd04d">
+<h2 id="org9cdd04d">Requirements</h2>
+<ul>
+<li>emacs (of course)</li>
+<li>org mode</li>
+<li>ox-reveal</li>
+<li>htmlize(optional)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orga8ac785">
+<h2 id="orga8ac785">Source Code Support</h2>
+<p>
+Install the package <code>htmlize</code> in emacs, and the exported code will have syntax
+highlighting.
+</p>
+<div class="org-src-container">
+
+<pre  class="src src-python"><span style="color: #3a81c3; font-weight: bold;">def</span> <span style="color: #6c3163; font-weight: bold;">info</span><span style="color: #3a81c3;">()</span>:
+    <span style="color: #3a81c3; font-weight: bold;">print</span><span style="color: #3a81c3;">(</span><span style="color: #2d9574;">"This is python code."</span><span style="color: #3a81c3;">)</span>
+
+<span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #3a81c3;">__name__</span> == <span style="color: #2d9574;">'__main__'</span>:
+    info<span style="color: #3a81c3;">()</span>
+</pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org41acd44">
+<h2 id="org41acd44">More Details</h2>
+<p>
+Just google it.
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

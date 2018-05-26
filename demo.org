@@ -1,0 +1,23 @@
+#+DATE: <2018-05-26 Sat>
+#+OPTIONS: num:nil
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+
+* Introduction
+  This document is written in org mode, and is exported using org-reveal.
+* Requirements
+  - emacs (of course)
+  - org mode
+  - ox-reveal
+  - htmlize(optional)
+* Source Code Support
+  Install the package =htmlize= in emacs, and the exported code will have syntax
+  highlighting.
+  #+BEGIN_SRC python
+    def info():
+        print("This is python code.")
+
+    if __name__ == '__main__':
+        info()
+  #+END_SRC
+* More Details
+  Just google it.
